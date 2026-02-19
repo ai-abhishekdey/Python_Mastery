@@ -2,7 +2,9 @@
 
 **Author: Abhishek Dey**
 
-## About: This repository is a structured, topic-based deep dive into Python — designed for strong fundamentals, engineering thinking, and advanced system-level understanding.
+## About: 
+
+This repository is a structured, topic-based deep dive into Python — designed for strong fundamentals, engineering thinking, and advanced system-level understanding.
 
 The learning path is divided into three progressive sections:
 

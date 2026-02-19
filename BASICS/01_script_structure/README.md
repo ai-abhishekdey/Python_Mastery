@@ -146,7 +146,7 @@ print(a.__add__(b))
 
 - They are automatically called by Python
 
-When we use operators like +, You just write:
+When we use operators like +, we just write:
 
 ```
 a + b
@@ -159,3 +159,6 @@ a.__add__(b)
 
 ```
 
+# To add next:
+
+1. __init__ and __main__

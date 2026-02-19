@@ -70,3 +70,48 @@ The main execution block controls what runs when the file is executed directly.
 if __name__ == "__main__":
     print(area_of_circle(5))
 ```
+
+## Dunder Names
+
+- **Dunder** -> **Double Underscore** in short
+
+- There are two types of Dunder Names:
+
+    - **Dunder Variables** 
+
+    ```
+    __name__
+    __dict__
+    __class__
+    ```
+
+    - **Dunder Methods** 
+
+    ```
+    __init__
+    __str__
+    __len__
+    __add__
+    ```
+
+### Dunder Variables:
+
+Dunder variables are special built-in identifiers in Python that start and end with double underscores:
+
+```
+__variable__
+
+```
+
+- They are defined by Python itself and are used to store internal information
+
+- They are also called:
+
+    - Special variables
+
+    - Magic variables
+
+    - System-defined identifiers
+
+
+    

@@ -100,18 +100,62 @@ Dunder variables are special built-in identifiers in Python that start and end w
 
 ```
 __variable__
-
 ```
 
 - They are defined by Python itself and are used to store internal information
 
 - They are also called:
 
-    - Special variables
+    - **Special variables**
 
-    - Magic variables
+    - **Magic variables**
 
-    - System-defined identifiers
+    - **System-defined identifiers**
 
+## Dunder Methods:
 
-    
+Dunder methods are special methods that also start and end with double underscores:
+
+```
+__method__()
+```
+
+- They are also called:
+
+    - **Special methods**
+
+    - **Magic methods**
+
+- They define how objects behave
+
+When we use operators like +, Python actually calls a dunder method behind the scenes
+
+```
+Example:
+
+a = 5
+b = 3
+print(a + b)
+```
+
+Internally, Python is doing:
+
+```
+print(a.__add__(b))
+```
+
+- They are automatically called by Python
+
+When we use operators like +, You just write:
+
+```
+a + b
+```
+
+Python automatically calls:
+
+```
+a.__add__(b)
+
+```
+

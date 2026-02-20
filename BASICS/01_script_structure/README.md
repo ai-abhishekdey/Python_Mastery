@@ -224,9 +224,19 @@ app/
 
 - However in modern Python versions (after 3.3), Python supports something called **namespace packages**. Now A folder can act like a package even without `__init__.py`
 
-### How Import Works Here
+## Importing Modules vs Importing Specific Functions
 
-From main.py, we can do:
+- Consider the following structure:
+
+```
+app/
+├── main.py
+└── src/
+    ├── __init__.py
+    └── train.py
+```
+
+- From `main.py`, we can import in two ways:
 
 ```
 from src import train
@@ -237,3 +247,53 @@ or
 ```
 from src.train import some_function
 ```
+
+- Let us consider `train.py` has two functions
+
+```
+def add(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+```
+
+### Scenario 1: Importing the Entire Module
+
+`main.py`
+
+```
+from src import train
+
+result1 = train.add(5, 3)
+result2 = train.multiply(4, 2)
+
+print(result1)
+print(result2)
+
+```
+
+- Imports the entire train module
+
+- We must use `train.` before calling functions
+
+- All functions inside train.py are accessible through the module
+
+### Scenario 2: Importing Specific Functions
+
+`main.py`
+
+```
+from src.train import add
+
+result1 = add(5, 3)
+
+print(result1)
+
+```
+
+- Imports only the specific function `add`
+
+- We can call it directly without using `train.`
+
+- Other functions like multiply are not directly available

@@ -190,13 +190,13 @@ app/
 
 - In the above structure:
 
-    - main.py → Module
+    - `main.py` → Module
 
-    - test.py → Module
+    - `test.py` → Module
 
-    - train.py → Module
+    - `train.py` → Module
 
-    - "__init__.py" → Also a module (special one)
+    - `__init__.py` → Also a module (special one)
 
 - Every .py file is treated as a module in Python.
 
@@ -210,19 +210,19 @@ app/
 
     - src/ → Package
 
-    - test.py → Module inside the src package
+    - `test.py` → Module inside the src package
 
-    - train.py → Module inside the src package
+    - `train.py` → Module inside the src package
 
-### What "__init__.py" Does Inside a Package ?
+### What `__init__.py` Does Inside a Package ?
 
-- "__init__.py" tells Python: "This folder is a package."
+- `__init__.py` tells Python: "This folder is a package."
 
 - It runs initialization code when the package is imported.
 
-- In older Python versions (before 3.3), if a folder did NOT contain "__init__.py", Python would NOT treat it as a package.
+- In older Python versions (before 3.3), if a folder did NOT contain `__init__.py`, Python would NOT treat it as a package.
 
-- However in modern Python versions (after 3.3), Python supports something called **namespace packages**. Now A folder can act like a package even without "__init__.py"
+- However in modern Python versions (after 3.3), Python supports something called **namespace packages**. Now A folder can act like a package even without `__init__.py`
 
 ### How Import Works Here
 

@@ -162,3 +162,78 @@ a.__add__(b)
 # To add next:
 
 1. __init__ and __main__
+
+
+
+## Modules and Packages
+
+📄 A single python (.py) file = module
+
+📁 A folder containing multiple python (.py) files = package
+
+Understanding modules and packages is essential for writing modular Python code.
+
+Consider the following project structure:
+
+```
+app/
+├── main.py
+└── src/
+    ├── __init__.py
+    ├── test.py
+    └── train.py
+```
+
+### What is a Module?
+
+- A module is simply a Python file (.py file).
+
+- In the above structure:
+
+    - main.py → Module
+
+    - test.py → Module
+
+    - train.py → Module
+
+    - __init__.py → Also a module
+
+- Every .py file is treated as a module in Python.
+
+- Modules help us organize code into separate files so that functionality can be reused and maintained easily.
+
+### What is a Package?
+
+- A package is a folder that contains multiple modules.
+
+- In the above structure:
+
+    - src/ → Package
+
+    - test.py → Module inside the src package
+
+    - train.py → Module inside the src package
+
+### What __init__.py Does Inside a Package ?
+
+- __init__.py tells Python: "This folder is a package."
+
+- It runs initialization code when the package is imported.
+
+- In older Python versions (before 3.3), if a folder did NOT contain __init__.py, Python would NOT treat it as a package.
+
+- However in modern Python versions (after 3.3), Python supports something called **namespace packages**. Now A folder can act like a package even without __init__.py.
+
+## How Import Works Here
+
+From main.py, we can do:
+
+```
+from src import train
+```
+
+or
+
+```
+from src.train import some_function
+```
